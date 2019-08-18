@@ -1,4 +1,5 @@
 import React, { Fragment} from 'react';
+import {Link } from "react-router-dom"
 
 function Nav() {
     return (
@@ -157,7 +158,7 @@ function Nav() {
 								</ul>
 							</li>
 							<li class="with-submenu">
-								<a class="link-hover" href="">Contact</a>
+								<Link to="/contact" class="link-hover" href="">Contact</Link>
 								<ul class="submenu">
 									<li><a href="contact1.html">Contact 1</a></li>
 									<li><a href="contact2.html">Contact 2</a></li>

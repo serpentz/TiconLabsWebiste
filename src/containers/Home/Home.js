@@ -1,8 +1,11 @@
 import React from 'react';
+import {Hero} from "../../components"
 
 function Container() {
 
     return (
+        <React.Fragment> 
+            <Hero /> 
         <div>
             <div class="container">
 			<div class="banner-widget-container banner-background box-shadow-1 text-center pulltop-140">
@@ -421,7 +424,7 @@ function Container() {
 
 
         </div>
-
+    </React.Fragment>
     )
 
 };
