@@ -8,12 +8,12 @@ function Nav() {
 				<div id='topbar' class='clearfix'>
 					<div class='logo pull-left'>
 						<h1>
-							<a href='index.html'>
+							<Link to='/'>
 								<img
 									src='http://via.placeholder.com/86x33'
 									alt='pintu'
 								/>
-							</a>
+							</Link>
 						</h1>
 					</div>
 					<nav class='navbar-toggleable-md navbar-dark bg-faded'>
@@ -101,9 +101,9 @@ function Nav() {
 						<div class='nav-desktop'>
 							<ul class='mx-auto top-level clearfix'>
 								<li class='with-submenu'>
-									<a class='link-hover' href='#'>
+									<Link class='link-hover' to='/'>
 										Home
-                                    </a>
+                                    </Link>
 								</li>
 								<li class='with-submenu'>
 									<a class='link-hover' href=''>
