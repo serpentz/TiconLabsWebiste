@@ -9,12 +9,12 @@ function Container() {
         <body>
 
 
-            <header class="page">
+            <header className="page">
 
 
-                <div class="container text-center">
+                <div className="container text-center">
                     <h2>Contact Us</h2>
-                    <p class="page-subtitle">
+                    <p className="page-subtitle">
                         Creative thinking inspires ideas. Ideas inspire change.
                 </p>
                 </div>
@@ -22,54 +22,54 @@ function Container() {
 
             <main>
 
-                <div class="container">
+                <div className="container">
 
-                    <div class="contact-widget homepage-widget box-shadow-1 clearfix pushtop-100">
-                        <p class="pretitle">CONTACT US</p>
+                    <div className="contact-widget homepage-widget box-shadow-1 clearfix pushtop-100">
+                        <p className="pretitle">CONTACT US</p>
                         <h3>Get in touch with us</h3>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <label class="required-input">NAME</label>
-                                <div class="input-container">
+                        <div className="row">
+                            <div className="col-md-3">
+                                <label className="required-input">NAME</label>
+                                <div className="input-container">
                                     <input type="text" placeholder="enter your name" required="" />
-                                    <div class="input-bottom-line"></div>
+                                    <div className="input-bottom-line"></div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <label class="required-input">E-MAIL</label>
-                                <div class="input-container">
+                            <div className="col-md-3">
+                                <label className="required-input">E-MAIL</label>
+                                <div className="input-container">
                                     <input type="email" placeholder="enter your email" required="" />
-                                    <div class="input-bottom-line"></div>
+                                    <div className="input-bottom-line"></div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <label class="required-input">PHONE</label>
-                                <div class="input-container">
+                            <div className="col-md-3">
+                                <label className="required-input">PHONE</label>
+                                <div className="input-container">
                                     <input type="text" placeholder="(00) 123 456 789" required="" />
-                                    <div class="input-bottom-line"></div>
+                                    <div className="input-bottom-line"></div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <label class="required-input">SUBJECT</label>
-                                <div class="input-container">
+                            <div className="col-md-3">
+                                <label className="required-input">SUBJECT</label>
+                                <div className="input-container">
                                     <input type="text" placeholder="subject" required="" />
-                                    <div class="input-bottom-line"></div>
+                                    <div className="input-bottom-line"></div>
                                 </div>
                             </div>
                         </div>
-                        <label class="required-input">MESSAGE</label>
-                        <div class="input-container">
+                        <label className="required-input">MESSAGE</label>
+                        <div className="input-container">
                             <textarea placeholder="enter your text"></textarea>
-                            <div class="input-bottom-line"></div>
+                            <div className="input-bottom-line"></div>
                         </div>
-                        <input type="submit" value="Send Message" class="button-style-1 pull-right" />
+                        <input type="submit" value="Send Message" className="button-style-1 pull-right" />
                     </div>
                 </div>
 
                 <div id="googleMap" style={{ position: "relative", overflow: "hidden" }}>
-                    <div style={{ height: "100%", width: "100%", position: "absolute", top: "0px", left: "0px", "background-color": "rgb(229, 227, 223)" }}>
-                        <div class="gm-err-container">
-                            <div class="gm-err-content">
+                    <div style={{ height: "100%", width: "100%", position: "absolute", top: "0px", left: "0px", backgroundColor: "rgb(229, 227, 223)" }}>
+                        <div className="gm-err-container">
+                            <div className="gm-err-content">
                                 <Map />
                             </div>
                         </div>

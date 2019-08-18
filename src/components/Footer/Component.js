@@ -4,51 +4,51 @@ import React from 'react'
 function Component() {
     return (
         <footer>
-            <div class='footer-main grad-3'>
-                <div class='container'>
-                    <div class='row'>
-                        <div class='col-lg-3 col-sm-6 col-12 contact-details'>
+            <div className='footer-main grad-3'>
+                <div className='container'>
+                    <div className='row'>
+                        <div className='col-lg-3 col-sm-6 col-12 contact-details'>
                             <h6>Contact Info</h6>
 
-                            <p class='footer-address'>
-                                <i class='fa fa-map-marker' />
+                            <p className='footer-address'>
+                                <i className='fa fa-map-marker' />
                                 123 Main Street New York, NY 01001{' '}
                             </p>
-                            <p class='footer-email'>
+                            <p className='footer-email'>
                                 <span>@</span>support@email.com{' '}
                             </p>
-                            <p class='footer-phone'>
-                                <i class='fa fa-phone' />1 (800) 123 4567
+                            <p className='footer-phone'>
+                                <i className='fa fa-phone' />1 (800) 123 4567
                             </p>
                         </div>
-                        <div class='col-lg-3 col-sm-6 col-12'>
+                        <div className='col-lg-3 col-sm-6 col-12'>
                             <h6>QuickLinks</h6>
                             <ul>
                                 <li>
-                                    <a href='#' class='link-hover'>
+                                    <a href='#' className='link-hover'>
                                         Terms and Conditions
                                     </a>
                                 </li>
                                 <li>
-                                    <a href='#' class='link-hover'>
+                                    <a href='#' className='link-hover'>
                                         Our Services
                                     </a>
                                 </li>
                                 <li>
-                                    <a href='#' class='link-hover'>
+                                    <a href='#' className='link-hover'>
                                         Privacy Policy
                                     </a>
                                 </li>
                                 <li>
-                                    <a href='#' class='link-hover'>
+                                    <a href='#' className='link-hover'>
                                         Disclaimer
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                        <div class='col-lg-3 col-sm-6 col-12'>
+                        <div className='col-lg-3 col-sm-6 col-12'>
                             <h6>Instagram Feed</h6>
-                            <ul class='instagram-feed'>
+                            <ul className='instagram-feed'>
                                 <li>
                                     <a href='#'>
                                         <img
@@ -115,37 +115,37 @@ function Component() {
                                 </li>
                             </ul>
                         </div>
-                        <div class='col-lg-3 col-sm-6 col-12'>
+                        <div className='col-lg-3 col-sm-6 col-12'>
                             <h6>Connect with us</h6>
-                            <ul class='footer-social'>
+                            <ul className='footer-social'>
                                 <li>
                                     <a href='#'>
-                                        <i class='fa fa-facebook-f' />
+                                        <i className='fa fa-facebook-f' />
                                     </a>
                                 </li>
                                 <li>
                                     <a href='#'>
-                                        <i class='fa fa-twitter' />
+                                        <i className='fa fa-twitter' />
                                     </a>
                                 </li>
                                 <li>
                                     <a href='#'>
-                                        <i class='fa fa-google-plus' />
+                                        <i className='fa fa-google-plus' />
                                     </a>
                                 </li>
                                 <li>
                                     <a href='#'>
-                                        <i class='fa fa-pinterest-p' />
+                                        <i className='fa fa-pinterest-p' />
                                     </a>
                                 </li>
                                 <li>
                                     <a href='#'>
-                                        <i class='fa fa-instagram' />
+                                        <i className='fa fa-instagram' />
                                     </a>
                                 </li>
                                 <li>
                                     <a href='#'>
-                                        <i class='fa fa-rss' />
+                                        <i className='fa fa-rss' />
                                     </a>
                                 </li>
                             </ul>
@@ -153,9 +153,9 @@ function Component() {
                     </div>
                 </div>
             </div>
-            <div class='footer-bottom'>
-                <div class='container'>
-                    <p class='copyright-text'>
+            <div className='footer-bottom'>
+                <div className='container'>
+                    <p className='copyright-text'>
                         Copyright 2018 © Pintu - PSD Template | All Rights
                         Reserved
                     </p>

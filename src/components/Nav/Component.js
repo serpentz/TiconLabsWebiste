@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 function Nav() {
 	return (
 		<Fragment>
-			<div class='container pos-r'>
-				<div id='topbar' class='clearfix'>
-					<div class='logo pull-left'>
+			<div className='container pos-r'>
+				<div id='topbar' className='clearfix'>
+					<div className='logo pull-left'>
 						<h1>
 							<Link to='/'>
 								<img
@@ -16,12 +16,12 @@ function Nav() {
 							</Link>
 						</h1>
 					</div>
-					<nav class='navbar-toggleable-md navbar-dark bg-faded'>
+					<nav className='navbar-toggleable-md navbar-dark bg-faded'>
 						<div
-							class='collapse navbar-collapse nav-mobile'
+							className='collapse navbar-collapse nav-mobile'
 							id='navbarToggler'
 						>
-							<ul class='mx-auto top-level clearfix box-shadow-1'>
+							<ul className='mx-auto top-level clearfix box-shadow-1'>
 								<li>
 									<a href='index1.html'>Homepage Layout 01</a>
 								</li>
@@ -76,23 +76,23 @@ function Nav() {
 								</li>
 							</ul>
 						</div>
-						<div class='nav-desktop'>
-							<ul class='mx-auto top-level clearfix'>
-								<li class='with-submenu'>
-									<Link class='link-hover' to='/'>
+						<div className='nav-desktop'>
+							<ul className='mx-auto top-level clearfix'>
+								<li className='with-submenu'>
+									<Link className='link-hover' to='/'>
 										Home
                                     </Link>
 								</li>
-								<li class='with-submenu'>
-									<a class='link-hover' href=''>
+								<li className='with-submenu'>
+									<a className='link-hover' href=''>
 										About Us
                                     </a>
 								</li>
-								<li class='with-submenu'>
-									<Link class='link-hover' to='/portfolio'>
+								<li className='with-submenu'>
+									<Link className='link-hover' to='/portfolio'>
 										Portfolio
                                     </Link>
-									<ul class='submenu'>
+									<ul className='submenu'>
 										<li>
 											<a href='portfolio-2cols.html'>
 												Big Client 1
@@ -111,11 +111,11 @@ function Nav() {
 
 									</ul>
 								</li>
-								<li class='with-submenu'>
-									<Link class='link-hover' to='/contact'>
+								<li className='with-submenu'>
+									<Link className='link-hover' to='/contact'>
 										Contact
                                     </Link>
-									<ul class='submenu'>
+									<ul className='submenu'>
 										<li>
 											<Link to='/contact'>
 												CEO
@@ -129,23 +129,23 @@ function Nav() {
 
 									</ul>
 								</li>
-								<li class='search'>
-									<a href='#' class='search'>
-										<i class='fa fa-search zmdi-lg' />
+								<li className='search'>
+									<a href='#' className='search'>
+										<i className='fa fa-search zmdi-lg' />
 									</a>
-									<div class='search-something'>
+									<div className='search-something'>
 										<input
 											type='search'
 											placeholder='search for something'
 										/>
 										<a href='#'>
-											<i class='fa fa-search zmdi-lg' />
+											<i className='fa fa-search zmdi-lg' />
 										</a>
 									</div>
 								</li>
-								<li class='lang-selection'>
+								<li className='lang-selection'>
 									<a href='#'>EN</a>
-									<ul class='lang'>
+									<ul className='lang'>
 										<li>
 											<a href='#'>DE</a>
 										</li>
