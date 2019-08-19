@@ -5,7 +5,9 @@ function Container() {
 
     return (
         <React.Fragment>  
-            <Hero /> 
+			<header>
+            	<Hero /> 
+			</header>
         <div>
             <div className="container">
 			<div className="banner-widget-container banner-background box-shadow-1 text-center pulltop-140">
