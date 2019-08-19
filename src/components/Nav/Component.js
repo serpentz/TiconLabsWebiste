@@ -2,8 +2,41 @@ import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 
 function Nav() {
+
+	const toogleSideBar = () => {
+		let element = document.getElementById("sideNav")
+		element.classList.toggle("active");
+	}
+
 	return (
 		<Fragment>
+		<div className="sidebar-nav">
+				<span onClick={toogleSideBar} className="sidebar-nav-toggler">
+					<img src="http://via.placeholder.com/71x43" alt="topbar-toggler" />
+				</span>
+				<aside id="sideNav" className="sidebar-nav-body">
+					<h6>SIDEBAR NAVIGATION</h6>
+					<span className="subtitle">Design &amp; Development</span>
+					<ul>
+						<li><a href="#">Homepage Layout 01</a></li>
+						<li><a href="#">Homepage Layout 02</a></li>
+						<li><a href="#">Homepage Layout 03</a></li>
+						<li><a href="#">Homepage Layout 04</a></li>
+					</ul>
+					<hr />
+					<h6>TEXT PARAGRAPH</h6>
+					<p className="sidebar-text">
+						You can see how he solves his problems. You can also see
+						what's wrong. Young children, especially, have enormous
+						creativity, and whatever's in them rises to the surface in free play.
+					</p>
+					<hr />
+					<h6>PREVIEW IMAGE</h6>
+					<span className="subtitle">Website Image</span>
+					<img className="img-fluid menu-image-1" src="http://via.placeholder.com/218x165" alt="menu image" />
+				</aside>
+			</div>
+
 			<div className='container pos-r'>
 				<div id='topbar' className='clearfix'>
 					<div className='logo pull-left'>
@@ -84,9 +117,9 @@ function Nav() {
                                     </Link>
 								</li>
 								<li className='with-submenu'>
-									<a className='link-hover' href=''>
+									<Link className='link-hover' to='/about'>
 										About Us
-                                    </a>
+                                    </Link>
 								</li>
 								<li className='with-submenu'>
 									<Link className='link-hover' to='/portfolio'>

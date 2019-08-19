@@ -1,4 +1,6 @@
 import React from "react"
+import {Link} from "react-router-dom"
+
 
 function Container() {
     return (
@@ -31,7 +33,7 @@ function Container() {
                                         <div className="portfolio-item-info">
                                             <h6>Cosmetics Packaging</h6>
                                             <p>Branding</p>
-                                            <a href="#">view project</a>
+                                            <Link to="/portfolio/5555">view project</Link>
                                         </div>
                                     </div>
                                 </div>
