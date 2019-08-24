@@ -17,7 +17,7 @@ function Container() {
 							<div className="image-container">
 								<img src="http://via.placeholder.com/110x120" alt="Banner image"/>
 							</div>
-							<h6>We are creators</h6>
+							<h6>We are developers</h6>
 							<p>
 								Consetetur sadipscing elitr, sed diam nonumy eirmod tempor
 								invidunt ut labore et dolor erat, sed diam voluptua.
@@ -41,7 +41,7 @@ function Container() {
 							<div className="image-container">
 								<img src="http://via.placeholder.com/110x120" alt="Banner image"/>
 							</div>
-							<h6>We are organized</h6>
+							<h6>We are Entreprenuers</h6>
 							<p>
 								Consetetur sadipscing elitr, sed diam nonumy eirmod tempor
 								invidunt ut labore et dolor erat, sed diam voluptua.
@@ -54,14 +54,14 @@ function Container() {
 			<div className="row pushtop-130 about1">
 				<div className="col-lg-5 drag-this-left">
 					<p className="pretitle">WHAT WE DO</p>
-					<h3>We create amazing design with passion</h3>
+					<h3>We create software applications with passion</h3>
 					<div className="about1-inner box-shadow-1 grad-1">
 						<p>
 							&quot; Helping small and big companies to grow
-							their business with a modern design. &quot;
+							their business with a modern development technologies. &quot;
 						</p>
 						<a href="#">
-							<span className="count">1.153</span>
+							<span className="count">10</span>
 							<div className="small-text">
 								happy clients &amp;
 								satisfied customers
@@ -75,7 +75,7 @@ function Container() {
 				</div>
 			</div>
 
-			<div className="statistics text-center pushtop-120">
+			{/* <div className="statistics text-center pushtop-120">
 				<p className="pretitle">SIMPLE STATISTICS</p>
 				<div className="row pushtop-60">
 					<div className="col-md-3 statistic drag-this-left">
@@ -95,7 +95,7 @@ function Container() {
 						<p className="metric">build websites</p>
 					</div>
 				</div>
-			</div>
+			</div> */}
 		</div>
 
 		<div className="portfolio-widget-1 pushtop-120">
@@ -104,13 +104,13 @@ function Container() {
 					<div className="row top-section">
 						<div className="col-md-6 drag-this-left">
 							<p className="pretitle">OUR WORKS</p>
-							<h3>See the companies that grew with us</h3>
+							<h3>See the startup companies that grew with us</h3>
 							<div className="portfolio-widget-1-tabs">
 								<ul>
 									<li><a data-filter="*" href="#">ALL</a></li>
-									<li><a data-filter=".portfolio-webdesign" href="#">WEBDESIGN</a></li>
-									<li><a data-filter=".portfolio-typo" href="#">TYPO</a></li>
-									<li><a data-filter=".portfolio-branding" href="#">BRANDING</a></li>
+									<li><a data-filter=".portfolio-webdesign" href="#">WEB</a></li>
+									<li><a data-filter=".portfolio-typo" href="#">MARKETING</a></li>
+									<li><a data-filter=".portfolio-branding" href="#">MOBILE</a></li>
 									<li><a data-filter=".portfolio-development" href="#">DEVELOPMENT</a></li>
 								</ul>
 							</div>
@@ -161,8 +161,8 @@ function Container() {
 						<div className="testimonial-avatar-holder grad-2">
 							<img src="http://via.placeholder.com/70x70" alt="testimonial avatar"/>
 						</div>
-						<p className="name">Alexandra Jones</p>
-						<p className="job">Co-Founder of Scientec</p>
+						<p className="name">Michael Santella</p>
+						<p className="job">Founder & CEO of Agilion </p>
 					</div>
 					<div className="testimonial box-shadow-1">
 						<span className="quote-icon"><img src="http://via.placeholder.com/24x17" alt="quote icon"/></span>
@@ -173,8 +173,8 @@ function Container() {
 						<div className="testimonial-avatar-holder grad-2">
 							<img src="http://via.placeholder.com/70x70" alt="testimonial avatar"/>
 						</div>
-						<p className="name">Marcus Kample</p>
-						<p className="job">Designer at Monarc</p>
+						<p className="name">Kareemah Woodard</p>
+						<p className="job">Corporate Wellness Consultant</p>
 					</div>
 					<div className="testimonial box-shadow-1">
 						<span className="quote-icon"><img src="http://via.placeholder.com/24x17" alt="quote icon"/></span>
@@ -185,8 +185,8 @@ function Container() {
 						<div className="testimonial-avatar-holder grad-2">
 							<img src="http://via.placeholder.com/70x70" alt="testimonial avatar"/>
 						</div>
-						<p className="name">Alexandra Jones</p>
-						<p className="job">Co-Founder of Scientec</p>
+						<p className="name">Bashirat Are</p>
+						<p className="job">CEO & Founder of BACF HR Consutling Services</p>
 					</div>
 					<div className="testimonial box-shadow-1">
 						<span className="quote-icon"><img src="http://via.placeholder.com/24x17" alt="quote icon"/></span>
@@ -197,8 +197,8 @@ function Container() {
 						<div className="testimonial-avatar-holder grad-2">
 							<img src="http://via.placeholder.com/70x70" alt="testimonial avatar"/>
 						</div>
-						<p className="name">Marcus Kample</p>
-						<p className="job">Designer at Monarc</p>
+						<p className="name">Nick Houanche </p>
+						<p className="job">CEO Vlocator</p>
 					</div>
 				</div>
 			</div>
@@ -211,7 +211,7 @@ function Container() {
 					<li className="team-member">
 						<img src="http://via.placeholder.com/255x255" className="img-fluid" alt="team member"/>
 						<div className="member-info">
-							<h6>John Betlehem</h6>
+							<h6>Travis Gray</h6>
 							<p className="role">Designer &amp; Developer</p>
 							<ul className="team-social">
 								<li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
@@ -225,7 +225,7 @@ function Container() {
 					<li className="team-member">
 						<img src="http://via.placeholder.com/255x255" className="img-fluid" alt="team member"/>
 						<div className="member-info">
-							<h6>John Betlehem</h6>
+							<h6>Marlon Moorer</h6>
 							<p className="role">Designer &amp; Developer</p>
 							<ul className="team-social">
 								<li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
@@ -239,7 +239,7 @@ function Container() {
 					<li className="team-member">
 						<img src="http://via.placeholder.com/255x255" className="img-fluid" alt="team member"/>
 						<div className="member-info">
-							<h6>John Betlehem</h6>
+							<h6>Josue Sossou</h6>
 							<p className="role">Designer &amp; Developer</p>
 							<ul className="team-social">
 								<li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
@@ -253,7 +253,7 @@ function Container() {
 					<li className="team-member">
 						<img src="http://via.placeholder.com/255x255" className="img-fluid" alt="team member"/>
 						<div className="member-info">
-							<h6>John Betlehem</h6>
+							<h6>Emmanuel Ogbewe</h6>
 							<p className="role">Designer &amp; Developer</p>
 							<ul className="team-social">
 								<li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
@@ -267,7 +267,7 @@ function Container() {
 					<li className="team-member">
 						<img src="http://via.placeholder.com/255x255" className="img-fluid" alt="team member"/>
 						<div className="member-info">
-							<h6>John Betlehem</h6>
+							<h6>Abyi Cherinet</h6>
 							<p className="role">Designer &amp; Developer</p>
 							<ul className="team-social">
 								<li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
@@ -278,34 +278,7 @@ function Container() {
 							<a href="#" className="view-profile">view profile</a>
 						</div>
 					</li>
-					<li className="team-member">
-						<img src="http://via.placeholder.com/255x255" className="img-fluid" alt="team member"/>
-						<div className="member-info">
-							<h6>John Betlehem</h6>
-							<p className="role">Designer &amp; Developer</p>
-							<ul className="team-social">
-								<li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
-								<li><a href="#"><i className="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i className="fa fa-google-plus"></i></a></li>
-								<li><a href="#"><i className="fa fa-instagram"></i></a></li>
-							</ul>
-							<a href="#" className="view-profile">view profile</a>
-						</div>
-					</li>
-					<li className="team-member">
-						<img src="http://via.placeholder.com/255x255" className="img-fluid" alt="team member"/>
-						<div className="member-info">
-							<h6>John Betlehem</h6>
-							<p className="role">Designer &amp; Developer</p>
-							<ul className="team-social">
-								<li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
-								<li><a href="#"><i className="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i className="fa fa-google-plus"></i></a></li>
-								<li><a href="#"><i className="fa fa-instagram"></i></a></li>
-							</ul>
-							<a href="#" className="view-profile">view profile</a>
-						</div>
-					</li>
+					
 				</ul>
 			</div>
 		</div>
@@ -317,7 +290,7 @@ function Container() {
 					<div className="col-md-4 col-sm-6 drag-this-left">
 						<i className="fa fa-pencil fa-2x"></i>
 						<section>
-							<h6>Handcrafter Conceptions</h6>
+							<h6>Handcrafted Software Development</h6>
 							<p>
 								Consetetur sadipscing elitr, sed diam nonumy eirmod tempor
 								invidunt ut labore et dolor erat, sed diam voluptua.
@@ -327,7 +300,7 @@ function Container() {
 					<div className="col-md-4 col-sm-6 drag-this-up">
 						<i className="fa fa-briefcase fa-2x"></i>
 						<section>
-							<h6>Business Consulting</h6>
+							<h6>Business and SAAS Consulting</h6>
 							<p>
 								Dignissim qui blandit praesent luptatum zzril delenit
 								augue duis dolore te feugait nulla facilisi.
@@ -337,7 +310,7 @@ function Container() {
 					<div className="col-md-4 col-sm-6 drag-this-right">
 						<i className="fa fa-braille fa-2x"></i>
 						<section>
-							<h6>Branding Ideas</h6>
+							<h6>Mobile Development</h6>
 							<p>
 								Molor in hendrerit in vulputate velit esse molestie consequat,
 								vel illum dolore eu feugiat nulla facilisis at.
@@ -347,7 +320,7 @@ function Container() {
 					<div className="col-md-4 col-sm-6 drag-this-left">
 						<i className="fa fa-flask fa-2x"></i>
 						<section>
-							<h6>Create Inventions</h6>
+							<h6>Website Development</h6>
 							<p>
 								Consetetur sadipscing elitr, sed diam nonumy eirmod tempor
 								invidunt ut labore et dolor erat, sed diam voluptua.

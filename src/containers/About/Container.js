@@ -21,7 +21,7 @@ function Container() {
                                     <div className="image-container">
                                         <img src="http://via.placeholder.com/110x120" alt="Banner image" />
                                     </div>
-                                    <h6>We are creators</h6>
+                                    <h6>We are developers</h6>
                                     <p>
                                         Consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                                         invidunt ut labore et dolor erat, sed diam voluptua.

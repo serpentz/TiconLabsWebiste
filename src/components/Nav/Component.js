@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
+import {logo, logotext,logoWithNoText} from "../../assets"
+
 
 function Nav() {
 
@@ -12,7 +14,7 @@ function Nav() {
 		<Fragment>
 		<div className="sidebar-nav">
 				<span onClick={toogleSideBar} className="sidebar-nav-toggler">
-					<img src="http://via.placeholder.com/71x43" alt="topbar-toggler" />
+					<img src={logotext} alt="topbar-toggler" />
 				</span>
 				<aside id="sideNav" className="sidebar-nav-body">
 					<h6>SIDEBAR NAVIGATION</h6>
@@ -43,7 +45,7 @@ function Nav() {
 						<h1>
 							<Link to='/'>
 								<img
-									src='http://via.placeholder.com/86x33'
+									src={logotext}
 									alt='pintu'
 								/>
 							</Link>

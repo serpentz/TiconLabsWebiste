@@ -11,15 +11,15 @@ function Component() {
                         <div className='col-lg-3 col-sm-6 col-12 contact-details'>
                             <h6>Contact Info</h6>
 
-                            <p className='footer-address'>
+                            {/* <p className='footer-address'>
                                 <i className='fa fa-map-marker' />
                                 123 Main Street New York, NY 01001{' '}
-                            </p>
+                            </p> */}
                             <p className='footer-email'>
-                                <span>@</span>support@email.com{' '}
+                                <span>@</span>support@ticonlabs.com{' '}
                             </p>
                             <p className='footer-phone'>
-                                <i className='fa fa-phone' />1 (800) 123 4567
+                                <i className='fa fa-phone' />1 (202) 345 2079
                             </p>
                         </div>
                         <div className='col-lg-3 col-sm-6 col-12'>
@@ -157,7 +157,7 @@ function Component() {
             <div className='footer-bottom'>
                 <div className='container'>
                     <p className='copyright-text'>
-                        Copyright 2018 © Pintu - PSD Template | All Rights
+                        Copyright 2019 ©Ticon Labs | All Rights
                         Reserved
                     </p>
                 </div>
