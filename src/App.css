@@ -752,6 +752,7 @@ nav .lang-selection::before{
 	font-family: 'Work Sans', sans-serif;
 	font-size: 13px;
 	font-weight: 600;
+	margin-left: 400px;
 	color: #fff;
 	padding: 0 30px;
 	transition: all 0.3s ease;
@@ -789,7 +790,7 @@ nav .lang-selection::before{
 
 .header-content .header-p{
 	margin-right: 60px;
-	margin-left: 140px;
+	margin-left: 72px;
 }
 
 .header-content .header-h2-bolder{
