@@ -1,5 +1,6 @@
 import React from "react"
 import {Link} from "react-router-dom"
+import { List } from "../../components";
 
 
 function Container() {
@@ -25,71 +26,9 @@ function Container() {
                                 <li><a data-filter=".portfolio-development" href="#">DEVELOPMENT</a></li>
                             </ul>
                         </div>
-                        <div className="drag-this-up text-center drag-up">
-                            <div className="row no-gutters" id="portfolio-widget-tab-content">
-                                <div className="col-md-6 portfolio-webdesign">
-                                    <div className="portfolio-item-container">
-                                        <img className="img-fluid" src="http://via.placeholder.com/635x400" alt="Portfolio item" />
-                                        <div className="portfolio-item-info">
-                                            <h6>Cosmetics Packaging</h6>
-                                            <p>Branding</p>
-                                            <Link to="/portfolio/5555">view project</Link>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6 portfolio-branding">
-                                    <div className="portfolio-item-container">
-                                        <img className="img-fluid" src="http://via.placeholder.com/635x400" alt="Portfolio item" />
-                                        <div className="portfolio-item-info">
-                                            <h6>Cosmetics Packaging</h6>
-                                            <p>Branding</p>
-                                            <a href="#">view project</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6 portfolio-webdesign">
-                                    <div className="portfolio-item-container">
-                                        <img className="img-fluid" src="http://via.placeholder.com/635x400" alt="Portfolio item" />
-                                        <div className="portfolio-item-info">
-                                            <h6>Cosmetics Packaging</h6>
-                                            <p>Branding</p>
-                                            <a href="#">view project</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6 portfolio-webdesign">
-                                    <div className="portfolio-item-container">
-                                        <img className="img-fluid" src="http://via.placeholder.com/635x400" alt="Portfolio item" />
-                                        <div className="portfolio-item-info">
-                                            <h6>Cosmetics Packaging</h6>
-                                            <p>Branding</p>
-                                            <a href="#">view project</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6 portfolio-development">
-                                    <div className="portfolio-item-container">
-                                        <img className="img-fluid" src="http://via.placeholder.com/635x400" alt="Portfolio item" />
-                                        <div className="portfolio-item-info">
-                                            <h6>Cosmetics Packaging</h6>
-                                            <p>Branding</p>
-                                            <a href="#">view project</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6 portfolio-typo">
-                                    <div className="portfolio-item-container">
-                                        <img className="img-fluid" src="http://via.placeholder.com/635x400" alt="Portfolio item" />
-                                        <div className="portfolio-item-info">
-                                            <h6>Cosmetics Packaging</h6>
-                                            <p>Branding</p>
-                                            <a href="#">view project</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <List />
+                    </div> 
+                    
                     <ul className="blog-pagination text-center">
                         <li><a className="pagination-prev" href="#"><i className="fa fa-angle-left" />PREV</a></li>
                         <li><a href="#">1</a></li>

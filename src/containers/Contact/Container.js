@@ -1,5 +1,5 @@
 import React from "react"
-import {Map} from "../../components"
+import {Map,ContactForm} from "../../components"
 
 
 
@@ -63,7 +63,9 @@ function Container() {
                             <div className="input-bottom-line"></div>
                         </div>
                         <input type="submit" value="Send Message" className="button-style-1 pull-right" />
+                        <ContactForm />
                     </div>
+                    
                 </div>
 
                 <div id="googleMap" style={{ position: "relative", overflow: "hidden" }}>
