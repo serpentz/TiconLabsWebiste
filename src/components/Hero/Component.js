@@ -11,7 +11,6 @@ function Hero() {
 							<p className="pre-title">Welcome to Ticon Labs</p>
 							<h2>We build amazing<br /><span>Software</span></h2>
 							<a href="#" className="header-button" tabIndex={-1}>View portfolio</a>
-							<a className="header-link pushleft" href="#" tabIndex={-1}>Check our free SAAS Checklist and get started with feature development today!</a>
 						</div>
 					</div>
 				</div>

@@ -744,6 +744,7 @@ nav .lang-selection::before{
 }
 
 .header-content .header-button{
+	margin: auto !important;
 	display: inline-block;
 	border-radius: 6px;
 	border: none;
