@@ -1,5 +1,5 @@
 import React from "react"
-import { Map } from "../../components"
+import { Map, Email } from "../../components"
 import { sendMailToRecipeint, sendMailToTicon } from '../../redux/actions/mailer'
 // import {sendMailToRecipeint} from '../../redux/actions'
 import { connect } from 'react-redux'
@@ -105,7 +105,7 @@ const Container = (props) => {
                             <div className="input-bottom-line"></div>
                         </div>
                         <input type="submit" onClick={onClick} value="Send Message" className="button-style-1 pull-right" />
-                        {/* <ContactForm /> */}
+                        <Email />
                     </div>
 
                 </div>
