@@ -1,9 +1,9 @@
 import email from './email'
-import projects from './projects'
+import modal from './modal'
 import { combineReducers } from 'redux'
 
 
 export default combineReducers({
     email,
-    projects
+    modal
 })

@@ -1,3 +1,3 @@
 import Email from './Email'
 
-export  { Email }
+export  default  { Email }

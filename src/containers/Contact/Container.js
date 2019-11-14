@@ -1,6 +1,6 @@
 import React from "react"
-import { Map, Email } from "../../components"
-import { sendMailToRecipeint, sendMailToTicon } from '../../redux/actions/mailer'
+import { Map, Email as EmailModal } from "../../components"
+import { Mailer, Modal } from '../../redux/actions'
 // import {sendMailToRecipeint} from '../../redux/actions'
 import { connect } from 'react-redux'
 
@@ -13,16 +13,17 @@ const Container = (props) => {
         e.preventDefault()
         let body = JSON.stringify(getBody())
         
-        props.dispatch(sendMailToRecipeint(body))
-        props.dispatch(sendMailToTicon(body))
+        props.dispatch(Mailer.sendMailToRecipeint(body))
+        props.dispatch(Mailer.sendMailToTicon(body))
+        setTimeout(() => props.dispatch(Modal.toggle("email",false)),2500)
     }
 
     function getBody() {
-        let name = document.getElementById("name").value
-        let email = document.getElementById("email").value
-        let phone = document.getElementById("phone").value
-        let subject = document.getElementById("subject").value
-        let message = document.getElementById("message").value
+        let name = props.form.name
+        let email = props.form.email
+        let phone = props.form.phone
+        let subject = props.form.subject
+        let message = props.form.message
 
         let text = `
             name : ${name}
@@ -30,7 +31,6 @@ const Container = (props) => {
             phone : ${phone}
             subject : ${subject}
             message : ${message}
-        
         `
 
         return {
@@ -42,6 +42,10 @@ const Container = (props) => {
                 "html": "<b><h1>Hello world?</h1></b>"
             }
         }
+    }
+
+    const onChangeHandler = (e) => {
+        props.dispatch(Mailer.updateForm(e))
     }
 
 
@@ -73,39 +77,39 @@ const Container = (props) => {
                             <div className="col-md-3">
                                 <label className="required-input">NAME</label>
                                 <div className="input-container">
-                                    <input id="name" type="text" placeholder="enter your name" required="" />
+                                    <input onChange={onChangeHandler} id="name" type="text" placeholder="enter your name" value={props.form.name}  required="" />
                                     <div className="input-bottom-line"></div>
                                 </div>
                             </div>
                             <div className="col-md-3">
                                 <label className="required-input">E-MAIL</label>
                                 <div className="input-container">
-                                    <input id="email" type="email" placeholder="enter your email" required="" />
+                                    <input onChange={onChangeHandler} id="email" type="email" placeholder="enter your email" value={props.form.email} required="" />
                                     <div className="input-bottom-line"></div>
                                 </div>
                             </div>
                             <div className="col-md-3">
                                 <label className="required-input">PHONE</label>
                                 <div className="input-container">
-                                    <input id="phone" type="text" placeholder="(00) 123 456 789" required="" />
+                                    <input onChange={onChangeHandler} id="phone" type="text" placeholder="(00) 123 456 789" value={props.form.phone}  required="" />
                                     <div className="input-bottom-line"></div>
                                 </div>
                             </div>
                             <div className="col-md-3">
                                 <label className="required-input">SUBJECT</label>
                                 <div className="input-container">
-                                    <input id="subject" type="text" placeholder="subject" required="" />
+                                    <input onChange={onChangeHandler} id="subject" type="text" placeholder="subject"value={props.form.subject}  required="" />
                                     <div className="input-bottom-line"></div>
                                 </div>
                             </div>
                         </div>
                         <label className="required-input">MESSAGE</label>
                         <div className="input-container">
-                            <textarea id="message" placeholder="enter your text"></textarea>
+                            <textarea  onChange={onChangeHandler} id="message" value={props.form.message} placeholder="enter your text"></textarea>
                             <div className="input-bottom-line"></div>
                         </div>
-                        <input type="submit" onClick={onClick} value="Send Message" className="button-style-1 pull-right" />
-                        <Email />
+                        <input type="submit" disabled={props.isFetching} onClick={onClick} value="Send Message" className="button-style-1 pull-right" />
+                        <EmailModal />
                     </div>
 
                 </div>
@@ -131,6 +135,13 @@ const mapStateToProps = state => {
         isSuccess: state.email.isSuccess,
         response: state.email.response,
         isFetching: state.email.isFetching,
+        form: {
+           name: state.email.form.name,
+           email: state.email.form.email,
+           phone: state.email.form.phone,
+           subject: state.email.form.subject,
+           message: state.email.form.message,
+        }
     };
 };
 
