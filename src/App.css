@@ -224,11 +224,17 @@ header{
 }
 
 header.page{
-	background-image: url("http://via.placeholder.com/1920x345");
+	background-image: linear-gradient(to left, #1f2d5e 20%, #233162 40% , #182248 60%);
 	background-size: auto 100%;
 	background-position: center;
 	margin-bottom: 90px;
 	padding-bottom: 50px;
+}
+ 
+header.page.contact{
+	background: #2980b9; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #6dd5fa, #6dd5fa, #6dd5fa); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #1f2d5e 20%, #233162 40% , #182248 60%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 header.page.nomargin{

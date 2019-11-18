@@ -1,5 +1,6 @@
 import React from 'react';
 import {Hero} from "../../components"
+import {Contact} from "../../containers"
 
 function Container() {
 
@@ -360,7 +361,7 @@ function Container() {
 				<a href="#"><img src="http://via.placeholder.com/160x60" alt="partner"/></a>
 			</div>
 
-			<div className="contact-widget homepage-widget box-shadow-1 clearfix pushtop-100">
+			{/* <div className="contact-widget homepage-widget box-shadow-1 clearfix pushtop-100">
 				<p className="pretitle">CONTACT US</p>
 				<h3>Get in touch with us</h3>
 				<div className="row">
@@ -392,7 +393,8 @@ function Container() {
 					<div className="input-bottom-line"></div>
 				</div>
 				<input type="submit" value="Send Message" className="button-style-1 pull-right"/>
-			</div>
+			</div> */}
+			<Contact />
 		</div>
 
 		<div id="googleMap"></div>

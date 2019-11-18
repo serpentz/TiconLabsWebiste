@@ -55,7 +55,7 @@ const Container = (props) => {
         <body>
 
 
-            <header className="page">
+            <header className="page contact">
 
 
                 <div className="container text-center">
