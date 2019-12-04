@@ -8,7 +8,7 @@ function Component(props) {
 
   let toggle = () => {
     let action = Modal.toggle("email",!props.isOpen)
-    
+
     props.dispatch(action)
 
   }
@@ -27,7 +27,6 @@ function Component(props) {
 
   return (
       <MDBContainer >
-        <MDBBtn color="warning" onClick={() => toggle()}>Top</MDBBtn>
         <MDBModal isOpen={props.isOpen} toggle={() => toggle()} frame position="top">
           <MDBModalBody className="text-center">
            {modalText()}
@@ -46,6 +45,6 @@ const mapState  = (state) =>{
     isError: state.email.isError,
     isSuccess: state.email.isSuccess
   }
-} 
+}
 
 export default connect(mapState)(Component);
