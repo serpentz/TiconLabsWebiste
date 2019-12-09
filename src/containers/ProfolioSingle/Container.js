@@ -1,7 +1,14 @@
 import React from 'react'
 import {withRouter} from "react-router"
+import {RxPubSub} from "rx-pubsub";
 
-function Container(props) {
+class Container extends React.Component{
+
+
+
+    render(){
+
+  
     return (
         <React.Fragment>
             <body>
@@ -37,7 +44,7 @@ function Container(props) {
                                     |
 						<span className="post-author">by Jonathan Doe</span>
                                 </div>
-                                <h3>{props.match.params.profile_id}</h3>
+                                <h3>{this.props.match.params.profile_id}</h3>
                                 <p>
                                     Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolor erat, sed
                                     diam voluptua. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
@@ -134,6 +141,7 @@ function Container(props) {
         </React.Fragment>
 
     )
+    }
 }
 
 export default withRouter(Container)

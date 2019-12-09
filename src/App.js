@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Nav, Footer } from './components'
 import { Home, Contact, Portfolio, About, Single } from "./containers"
 import { Switch, Route } from "react-router-dom"
-// import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
