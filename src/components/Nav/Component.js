@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
-import { logo, logotext, logoWithNoText } from "../../assets"
+import { logotext } from "../../assets"
 import {RxPubSub} from "rx-pubsub";
 
 
@@ -17,7 +17,6 @@ class Nav extends React.Component {
 	onChange(e){
 		RxPubSub.publish("nav_search_value",e.target.value)	
 	}
-
 
 	render() {
 		return (
