@@ -14,11 +14,6 @@ class Nav extends React.Component {
 		RxPubSub.subscribe("nav_search_value", (e) => this.setState({nav_search_value: e}))
 	}
 
-	toogleSideBar = () => {
-		let element = document.getElementById("sideNav")
-		element.classList.toggle("active");
-	}
-
 	onChange(e){
 		RxPubSub.publish("nav_search_value",e.target.value)	
 	}
@@ -28,9 +23,7 @@ class Nav extends React.Component {
 		return (
 			<Fragment>
 				<div className="sidebar-nav">
-					<span onClick={this.toogleSideBar} className="sidebar-nav-toggler">
-						<img src={logotext} alt="topbar-toggler" />
-					</span>
+				
 					<aside id="sideNav" className="sidebar-nav-body">
 						<h6>SIDEBAR NAVIGATION</h6>
 						<span className="subtitle">Design &amp; Development</span>
@@ -177,33 +170,6 @@ class Nav extends React.Component {
                                             </Link>
 											</li>
 
-										</ul>
-									</li>
-									<li className='search'>
-										<a href='#' className='search'>
-											<i className='fa fa-search zmdi-lg' />
-										</a>
-										<div className='search-something'>
-											<input
-												type='search'
-												onChange={this.onChange}
-												value={this.state.nav_search_value}
-												placeholder='search for something'
-											/>
-											<a href='#'>
-												<i className='fa fa-search zmdi-lg' />
-											</a>
-										</div>
-									</li>
-									<li className='lang-selection'>
-										<a href='#'>EN</a>
-										<ul className='lang'>
-											<li>
-												<a href='#'>DE</a>
-											</li>
-											<li>
-												<a href='#'>FR</a>
-											</li>
 										</ul>
 									</li>
 								</ul>
