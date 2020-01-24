@@ -1580,7 +1580,7 @@ header.page .page-subtitle{
 }
 
 .team-widget-1 .team-member{
-	width: calc( (100% - 18px ) / 7 ); /*1-seventh minus the margins*/
+	width: calc( (100% - 18px ) / 5 ); /*1-seventh minus the margins*/
 	position: relative;
 	z-index: 1;
 	transition: all 0.1s ease;

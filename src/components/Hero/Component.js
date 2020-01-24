@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import {logoSVG} from "../../assets"
+import { Link } from "react-router-dom";
 function Hero() {
 	return (
 		<Fragment>
@@ -10,7 +11,7 @@ function Hero() {
 							<img src={logoSVG} className="pull-left header-p" alt="P" />
 							<p className="pre-title">Welcome to Ticon Labs</p>
 							<h2>We build amazing<br /><span>Software</span></h2>
-							<a href="#" className="header-button" tabIndex={-1}>View portfolio</a>
+							<Link to="/portfolio" className="header-button">View portfolio</Link>
 						</div>
 					</div>
 				</div>
