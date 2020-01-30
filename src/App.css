@@ -982,6 +982,7 @@ header.page .page-subtitle{
 
 .banner-widget-container .banner-widget .image-container{
 	min-height: 150px;
+    text-align: -webkit-center;
 }
 
 .banner-widget-container.small-images .banner-widget .image-container{
@@ -1109,14 +1110,14 @@ header.page .page-subtitle{
 
 .about1::after{
 	top: 27px;
-	right: -260px;
-	width: 387px;
+	right: 0px;
+	width: calc(100% /2);
 	height: 377px;
 	z-index: -1;
 	display: block;
 	content: "";
 	position: absolute;
-	background-image: url('http://via.placeholder.com/387x377');
+	background-color: #7d8b8d;
 	background-repeat: no-repeat;
 }
 

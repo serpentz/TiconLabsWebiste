@@ -1,6 +1,7 @@
 import React from 'react';
 import {Hero} from "../../components"
 import {Contact} from "../../containers"
+import { Link } from "react-router-dom";
 
 function Container() {
 
@@ -16,7 +17,8 @@ function Container() {
 					<div className="col-md-4">
 						<div className="banner-widget">
 							<div className="image-container">
-								<img src="http://via.placeholder.com/110x120" alt="Banner image"/>
+								<div style={{background: "#777",width: "110px", height: "120px"
+								}} alt="Banner image"/>
 							</div>
 							<h6>We are developers</h6>
 							<p>
@@ -28,7 +30,8 @@ function Container() {
 					<div className="col-md-4">
 						<div className="banner-widget">
 							<div className="image-container">
-								<img src="http://via.placeholder.com/110x120" alt="Banner image"/>
+							<div style={{background: "#777",width: "110px", height: "120px"
+								}} alt="Banner image"/>
 							</div>
 							<h6>We think big</h6>
 							<p>
@@ -40,7 +43,8 @@ function Container() {
 					<div className="col-md-4">
 						<div className="banner-widget">
 							<div className="image-container">
-								<img src="http://via.placeholder.com/110x120" alt="Banner image"/>
+							<div style={{background: "#777",width: "110px", height: "120px"
+								}} alt="Banner image"/>
 							</div>
 							<h6>We are Entreprenuers</h6>
 							<p>
@@ -61,19 +65,19 @@ function Container() {
 							&quot; Helping small and big companies to grow
 							their business with a modern development technologies. &quot;
 						</p>
-						<a href="#">
+						<Link to="/portfolio">
 							<span className="count">10</span>
 							<div className="small-text">
 								happy clients &amp;
 								satisfied customers
 							</div>
 							<i className="fa fa-caret-right fa-2x"></i>
-						</a>
+						</Link>
 					</div>
 				</div>
-				<div className="col-lg-7">
+				{/* <div className="col-lg-7">
 					<iframe src="https://www.youtube.com/embed/v4oN4DuR7YU?rel=0"></iframe>
-				</div>
+				</div> */}
 			</div>
 
 			{/* <div className="statistics text-center pushtop-120">
@@ -144,7 +148,7 @@ function Container() {
 						<a href="#"><img src="http://via.placeholder.com/580x380" className="img-fluid" alt="Portfolio item"/></a>
 					</div>
 				</div>
-				<a className="mx-auto button-style-1 load-more" href="#">LOAD MORE</a>
+				
 			</div>
 		</div>
 
@@ -154,7 +158,7 @@ function Container() {
 				<h3 className="text-center">What our clients say</h3>
 				<div className="slick-testimonials">
 					<div className="testimonial box-shadow-1">
-						<span className="quote-icon"><img src="http://via.placeholder.com/24x17" alt="quote icon"/></span>
+						<br/>
 						<p className="main-text">
 							“Consetetur sadipscing elitr, sed diam nonumy eirmod tempor
 							invidunt ut labore et dolor erat, sed diam voluptua.”
@@ -166,7 +170,7 @@ function Container() {
 						<p className="job">Founder & CEO of Agilion </p>
 					</div>
 					<div className="testimonial box-shadow-1">
-						<span className="quote-icon"><img src="http://via.placeholder.com/24x17" alt="quote icon"/></span>
+						<br/>
 						<p className="main-text">
 							“Duis autem vel eum iriure dolor in hendrerit in vulputate velit
 							esse molestie consequat, vel illum dolore eu feugiat nulla.”
@@ -178,7 +182,7 @@ function Container() {
 						<p className="job">Corporate Wellness Consultant</p>
 					</div>
 					<div className="testimonial box-shadow-1">
-						<span className="quote-icon"><img src="http://via.placeholder.com/24x17" alt="quote icon"/></span>
+						<br/>
 						<p className="main-text">
 							“Ut wisi enim ad minim veniam, quis nostrud exerci tation
 							ullamcorper suscipit lobortis nisl ut aliquip consequat.”
@@ -190,7 +194,7 @@ function Container() {
 						<p className="job">CEO & Founder of BACF HR Consutling Services</p>
 					</div>
 					<div className="testimonial box-shadow-1">
-						<span className="quote-icon"><img src="http://via.placeholder.com/24x17" alt="quote icon"/></span>
+						<br/>
 						<p className="main-text">
 							“Duis autem vel eum iriure dolor in hendrerit in vulputate velit
 							esse molestie consequat, vel illum dolore eu feugiat nulla.”
