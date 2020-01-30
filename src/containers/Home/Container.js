@@ -397,7 +397,8 @@ function Container() {
 			<Contact />
 		</div>
 
-		<div id="googleMap"></div>
+		<br />
+		<br />
 
 
         </div>
